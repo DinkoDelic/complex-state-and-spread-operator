@@ -14,7 +14,11 @@ function App() {
     // prevValue = {fName, lName, email} and [name]
     // will replace one of them from selected input field name tag
     // and asssign the value in it
-    // no need for if/elese
+    // no need for if/else
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+    // more about why [name]:value works
+    //https://stackoverflow.com/questions/11508463/javascript-set-object-key-by-variable?noredirect=1&lq=1
     setContact((prevValue) => ({ ...prevValue, [name]: value }));
   }
 
